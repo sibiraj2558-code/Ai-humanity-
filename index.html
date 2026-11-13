@@ -2,239 +2,573 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AI Humanity | Jobs, Skills & Income Opportunities</title>
+<title>AI Humanity | Jobs, Skills & Income</title>
 
-<meta name="description" content="AI Humanity helps people discover job opportunities, work from home options, income ideas, career skills and AI-based career guidance.">
+<meta name="description" content="AI Humanity helps everyone discover job opportunities, learn skills, explore income ideas and grow with AI.">
 
 <meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://sibiraj2558-code.github.io/Ai-humanity-/">
 
-<meta name="theme-color" content="#071b3b">
+<meta name="theme-color" content="#06152f">
 
-<meta property="og:title" content="AI Humanity">
-
-<meta property="og:description" content="Find Jobs. Discover Skills. Build Income.">
-
-<meta property="og:url" content="https://sibiraj2558-code.github.io/Ai-humanity-/">
-
-<meta property="og:type" content="website">
 <style>
-*{box-sizing:border-box}
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+scroll-behavior:smooth;
+}
+
 body{
- margin:0;
- font-family:Arial,sans-serif;
- background:#f3f7ff;
- color:#142746;
+font-family:Arial,sans-serif;
+background:#06152f;
+color:white;
+line-height:1.6;
 }
+
 header{
- background:#071b3b;
- color:white;
- padding:22px;
- text-align:center;
+background:#071a38;
+padding:18px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+border-bottom:1px solid #d6a832;
 }
-header h1{margin:0;color:#ffc857}
-header p{margin-bottom:0}
+
+.logo{
+font-size:25px;
+font-weight:bold;
+color:#ffc83d;
+}
+
+.logo span{
+color:white;
+}
+
+nav{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+nav a:hover{
+color:#ffc83d;
+}
+
 .hero{
- background:linear-gradient(135deg,#071b3b,#1769e0);
- color:white;
- padding:55px 20px;
- text-align:center;
+padding:75px 7%;
+text-align:center;
+background:linear-gradient(135deg,#071a38,#0754a5);
 }
-.hero h2{font-size:34px}
-.hero p{line-height:1.7}
-.container{
- max-width:850px;
- margin:25px auto;
- padding:20px;
+
+.hero h1{
+font-size:45px;
+line-height:1.2;
+margin-bottom:20px;
 }
-.box{
- background:white;
- padding:25px;
- border-radius:15px;
- box-shadow:0 5px 20px #0001;
- margin-bottom:20px;
+
+.hero h1 span{
+color:#ffc83d;
 }
-h2{color:#1254a5}
- .hero h2{
- color:white;
- font-size:40px;
- }
-input,select{
- width:100%;
- padding:14px;
- margin:9px 0 17px;
- border:1px solid #ccd6e5;
- border-radius:8px;
- font-size:15px;
+
+.hero p{
+font-size:18px;
+margin:15px auto;
+max-width:650px;
 }
-button{
- background:#1769e0;
- color:white;
- border:0;
- padding:15px;
- border-radius:8px;
- width:100%;
- font-size:16px;
- font-weight:bold;
- cursor:pointer;
+
+.btn{
+display:inline-block;
+background:#ffc52e;
+color:#071a38;
+padding:13px 27px;
+border-radius:30px;
+font-weight:bold;
+text-decoration:none;
+margin-top:20px;
 }
-button:hover{background:#071b3b}
+
+.search{
+max-width:600px;
+margin:30px auto 0;
+display:flex;
+gap:8px;
+}
+
+.search input{
+flex:1;
+padding:15px;
+border-radius:30px;
+border:none;
+min-width:0;
+}
+
+.search button{
+padding:12px 20px;
+border:0;
+border-radius:30px;
+background:#ffc52e;
+font-weight:bold;
+}
+
+.section{
+padding:60px 7%;
+text-align:center;
+}
+
+.section h2{
+font-size:30px;
+color:#ffc83d;
+margin-bottom:12px;
+}
+
+.subtitle{
+color:#c5d5ed;
+margin-bottom:30px;
+}
+
 .cards{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
- gap:15px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:30px;
 }
+
 .card{
- background:#eaf3ff;
- padding:20px;
- border-radius:12px;
+background:#10294e;
+border:1px solid #315b91;
+padding:27px 20px;
+border-radius:17px;
+transition:.3s;
 }
-.card h3{color:#1254a5}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#ffc83d;
+}
+
+.card .icon{
+font-size:42px;
+}
+
+.card h3{
+color:#ffc83d;
+margin:12px 0;
+}
+
+.card p{
+color:#d5dfef;
+font-size:14px;
+}
+
+.card a{
+display:inline-block;
+margin-top:15px;
+color:#ffc83d;
+text-decoration:none;
+font-weight:bold;
+}
+
+.light{
+background:#0b2141;
+}
+
+.assistant{
+max-width:650px;
+margin:auto;
+background:#10294e;
+padding:25px;
+border-radius:18px;
+border:1px solid #ffc83d;
+}
+
+.assistant input{
+width:100%;
+padding:15px;
+border-radius:10px;
+border:0;
+margin:15px 0;
+}
+
+.assistant button{
+background:#ffc83d;
+border:0;
+padding:12px 25px;
+border-radius:25px;
+font-weight:bold;
+}
+
+#answer{
+margin-top:20px;
+color:#fff;
+}
+
 footer{
- background:#071b3b;
- color:white;
- text-align:center;
- padding:25px;
+text-align:center;
+padding:30px 15px;
+background:#020d20;
+border-top:1px solid #d6a832;
 }
-#result{
- margin-top:20px;
- padding:15px;
- background:#e7f8ed;
- border-radius:8px;
- display:none;
+
+footer p{
+color:#c5d5ed;
+margin:8px;
+}
+
+@media(max-width:600px){
+
+header{
+justify-content:center;
+gap:15px;
+}
+
+nav{
+justify-content:center;
+gap:13px;
+}
+
+.hero{
+padding:60px 18px;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.section{
+padding:45px 18px;
+}
+
+.search{
+flex-wrap:wrap;
+}
+
+.search input{
+width:100%;
+flex-basis:100%;
+}
+
+.search button{
+width:100%;
+}
+
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>AI HUMANITY</h1>
-<p>Opportunity for Everyone 🌍</p>
+
+<div class="logo">✦ AI <span>HUMANITY</span></div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#jobs">Jobs</a>
+<a href="#skills">Skills</a>
+<a href="#income">Income</a>
+<a href="#assistant">AI Assistant</a>
+<a href="#about">About</a>
+</nav>
+
 </header>
 
-<section class="hero">
-<h2>Find Your Future With AI</h2>
-<p>Find Jobs. Discover Skills. Build Income.<br>
-உங்கள் எதிர்காலத்தை AI மூலம் உருவாக்குங்கள்!</p>
-</section>
+<section class="hero" id="home">
 
-<div class="container">
+<h1>Find Your Future<br>With <span>AI</span></h1>
 
-<div class="box">
-<h2>🔍 Find Your Opportunities</h2>
+<p>
+Discover Jobs, Build Skills, Earn Income
+and Grow with the Power of Artificial Intelligence.
+</p>
 
-<form id="jobForm">
+<p>
+உங்கள் எதிர்காலத்தை AI மூலம் உருவாக்குங்கள்!
+</p>
 
-<label>Education</label>
-<select id="education" required>
-<option value="">Select Education</option>
-<option>10th Pass</option>
-<option>12th Pass</option>
-<option>Diploma</option>
-<option>Graduate</option>
-<option>Postgraduate</option>
-</select>
+<a href="#opportunities" class="btn">
+Explore Opportunities →
+</a>
 
-<label>Location</label>
-<input id="location" placeholder="Enter your city" required>
+<div class="search">
+<input id="searchInput"
+placeholder="Search jobs, skills or income ideas...">
 
-<label>Your Skills</label>
-<input id="skills" placeholder="Typing, Excel, Sales...">
-
-<label>Expected Monthly Salary</label>
-<select id="salary">
-<option>Any Salary</option>
-<option>Below ₹10,000</option>
-<option>₹10,000 - ₹20,000</option>
-<option>₹20,000 - ₹30,000</option>
-<option>Above ₹30,000</option>
-</select>
-
-<label>Work Preference</label>
-<select id="work">
-<option>Any</option>
-<option>Full-time</option>
-<option>Part-time</option>
-<option>Work From Home</option>
-<option>Freelance</option>
-</select>
-
-<button type="submit">Find Opportunities 🚀</button>
-</form>
-
-<div id="result"></div>
+<button onclick="searchCards()">Search</button>
 </div>
 
-<div class="box">
-<h2>Our Services</h2>
+</section>
+
+<section class="section" id="opportunities">
+
+<h2>Explore Opportunities</h2>
+
+<p class="subtitle">
+Everything you need to grow in one place.
+</p>
+
 <div class="cards">
 
 <div class="card">
-<h3>💼 Job Finder</h3>
-<p>Discover suitable job opportunities.</p>
+<div class="icon">💼</div>
+<h3>Find Jobs</h3>
+<p>Explore job categories, career options and work opportunities.</p>
+<a href="#jobs">Explore →</a>
 </div>
 
 <div class="card">
-<h3>💰 Income Finder</h3>
-<p>Explore ways to earn money.</p>
+<div class="icon">🎓</div>
+<h3>Discover Skills</h3>
+<p>Learn digital skills, computer knowledge and career development.</p>
+<a href="#skills">Learn More →</a>
 </div>
 
 <div class="card">
-<h3>🎓 Skill Finder</h3>
-<p>Discover skills for your career.</p>
+<div class="icon">💰</div>
+<h3>Earn Income</h3>
+<p>Discover online and offline earning ideas.</p>
+<a href="#income">Explore →</a>
 </div>
 
 <div class="card">
-<h3>🏠 Work From Home</h3>
-<p>Explore remote work opportunities.</p>
+<div class="icon">🤖</div>
+<h3>AI Assistant</h3>
+<p>Get basic guidance for your learning and career journey.</p>
+<a href="#assistant">Try Now →</a>
+</div>
+
+</div>
+</section>
+
+<section class="section light" id="jobs">
+
+<h2>💼 Job Opportunities</h2>
+
+<p class="subtitle">
+Explore different career paths.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Office Jobs</h3>
+<p>Explore admin, receptionist, data entry and office assistant roles.</p>
 </div>
 
 <div class="card">
-<h3>🤖 AI Assistant</h3>
-<p>Get career guidance and suggestions.</p>
+<h3>Work From Home</h3>
+<p>Learn about remote work and online career opportunities.</p>
 </div>
 
 <div class="card">
-<h3>🚀 Business Ideas</h3>
-<p>Explore small business opportunities.</p>
+<h3>Government Jobs</h3>
+<p>Explore UPSC, TNPSC, SSC and Railway exam opportunities.</p>
 </div>
 
 </div>
+
+<p class="subtitle">
+Always verify vacancies and applications through official websites.
+</p>
+
+</section>
+
+<section class="section" id="skills">
+
+<h2>🎓 Learn New Skills</h2>
+
+<p class="subtitle">
+Build your knowledge. Build your future.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>💻 Computer Skills</h3>
+<p>MS Office, Excel and basic computer knowledge.</p>
+</div>
+
+<div class="card">
+<h3>📊 Data Analytics</h3>
+<p>Learn Excel, SQL and data analysis basics.</p>
+</div>
+
+<div class="card">
+<h3>🤖 Artificial Intelligence</h3>
+<p>Understand AI tools and their practical uses.</p>
+</div>
+
+<div class="card">
+<h3>🌐 Digital Marketing</h3>
+<p>Explore content creation and online marketing.</p>
 </div>
 
 </div>
+</section>
+
+<section class="section light" id="income">
+
+<h2>💰 Income Opportunities</h2>
+
+<p class="subtitle">
+Discover ways to develop your income.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Online Freelancing</h3>
+<p>Explore writing, design and digital services.</p>
+</div>
+
+<div class="card">
+<h3>Digital Products</h3>
+<p>Create and sell planners, eBooks and study materials.</p>
+</div>
+
+<div class="card">
+<h3>Small Business</h3>
+<p>Explore low-investment business ideas.</p>
+</div>
+
+</div>
+
+<p class="subtitle">
+Income is not guaranteed. Check risks and terms before paying or joining any opportunity.
+</p>
+
+</section>
+
+<section class="section" id="assistant">
+
+<h2>🤖 AI Humanity Assistant</h2>
+
+<p class="subtitle">
+Ask for basic career and learning guidance.
+</p>
+
+<div class="assistant">
+
+<h3>How can I help you?</h3>
+
+<input id="question"
+placeholder="Example: How can I learn Excel?">
+
+<button onclick="askAssistant()">Ask Question</button>
+
+<div id="answer">
+Your guidance will appear here.
+</div>
+
+</div>
+
+</section>
+
+<section class="section light" id="about">
+
+<h2>🌍 About AI Humanity</h2>
+
+<p>
+AI Humanity is a platform designed to help people
+discover opportunities, develop skills and explore
+career and income possibilities with technology.
+</p>
+
+<br>
+
+<h3 style="color:#ffc83d">
+Opportunity for Everyone
+</h3>
+
+<p>
+Dream Big. Learn More. Achieve More.
+</p>
+
+</section>
 
 <footer>
-<h2 style="color:#ffc857">AI HUMANITY</h2>
-<p>Building Opportunities. Changing Lives.</p>
-<p>© 2026 AI HUMANITY</p>
+
+<h2 style="color:#ffc83d">AI HUMANITY</h2>
+
+<p>Opportunity for Everyone 🌍</p>
+
+<p>Find Jobs | Discover Skills | Build Income</p>
+
+<p>© 2026 AI Humanity. All Rights Reserved.</p>
+
 </footer>
 
 <script>
-document.getElementById("jobForm").addEventListener("submit",function(e){
-e.preventDefault();
 
-let location=document.getElementById("location").value;
-let education=document.getElementById("education").value;
-let skills=document.getElementById("skills").value;
-let work=document.getElementById("work").value;
+function searchCards(){
 
-let result=document.getElementById("result");
-result.style.display="block";
+const query =
+document.getElementById("searchInput")
+.value.toLowerCase().trim();
 
-result.innerHTML=
-"<h3>Your Search Details</h3>"+
-"<p>Education: "+education+"</p>"+
-"<p>Location: "+location+"</p>"+
-"<p>Skills: "+(skills||"Not specified")+"</p>"+
-"<p>Work Preference: "+work+"</p>"+
-"<b>Your profile is ready for opportunity matching!</b>"+
-"<p>Note: Live verified job listings will be connected in the next development stage.</p>";
+const cards =
+document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+card.style.display =
+card.innerText.toLowerCase().includes(query)
+? ""
+: "none";
+
 });
+
+}
+
+function askAssistant(){
+
+const q =
+document.getElementById("question")
+.value.toLowerCase();
+
+let answer =
+"Explore our Jobs, Skills and Income sections to learn more.";
+
+if(q.includes("job")){
+answer =
+"Start by identifying your qualification and skills. Explore suitable jobs and verify vacancies on official company websites.";
+}
+
+else if(q.includes("excel") || q.includes("skill")){
+answer =
+"Start with basic computer knowledge, Excel formulas, tables, sorting and data entry. Practice every day.";
+}
+
+else if(q.includes("income") || q.includes("money")){
+answer =
+"Explore freelancing, digital products and small business ideas. Avoid jobs asking for registration fees or deposits.";
+}
+
+else if(q.includes("ai")){
+answer =
+"Begin with AI basics, prompt writing and responsible use of AI tools.";
+}
+
+document.getElementById("answer").innerText =
+answer;
+
+}
+
 </script>
 
 </body>
-  </html>
+ </html>
