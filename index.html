@@ -1,1 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI HUMANITY</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#f3f7ff;
+ color:#142746;
+}
+header{
+ background:#071b3b;
+ color:white;
+ padding:22px;
+ text-align:center;
+}
+header h1{margin:0;color:#ffc857}
+header p{margin-bottom:0}
+.hero{
+ background:linear-gradient(135deg,#071b3b,#1769e0);
+ color:white;
+ padding:55px 20px;
+ text-align:center;
+}
+.hero h2{font-size:34px}
+.hero p{line-height:1.7}
+.container{
+ max-width:850px;
+ margin:25px auto;
+ padding:20px;
+}
+.box{
+ background:white;
+ padding:25px;
+ border-radius:15px;
+ box-shadow:0 5px 20px #0001;
+ margin-bottom:20px;
+}
+h2{color:#1254a5}
+input,select{
+ width:100%;
+ padding:14px;
+ margin:9px 0 17px;
+ border:1px solid #ccd6e5;
+ border-radius:8px;
+ font-size:15px;
+}
+button{
+ background:#1769e0;
+ color:white;
+ border:0;
+ padding:15px;
+ border-radius:8px;
+ width:100%;
+ font-size:16px;
+ font-weight:bold;
+ cursor:pointer;
+}
+button:hover{background:#071b3b}
+.cards{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+ gap:15px;
+}
+.card{
+ background:#eaf3ff;
+ padding:20px;
+ border-radius:12px;
+}
+.card h3{color:#1254a5}
+footer{
+ background:#071b3b;
+ color:white;
+ text-align:center;
+ padding:25px;
+}
+#result{
+ margin-top:20px;
+ padding:15px;
+ background:#e7f8ed;
+ border-radius:8px;
+ display:none;
+}
+</style>
+</head>
+<body>
 
+<header>
+<h1>AI HUMANITY</h1>
+<p>Opportunity for Everyone 🌍</p>
+</header>
+
+<section class="hero">
+<h2>Find Your Future With AI</h2>
+<p>Find Jobs. Discover Skills. Build Income.<br>
+உங்கள் எதிர்காலத்தை AI மூலம் உருவாக்குங்கள்!</p>
+</section>
+
+<div class="container">
+
+<div class="box">
+<h2>🔍 Find Your Opportunities</h2>
+
+<form id="jobForm">
+
+<label>Education</label>
+<select id="education" required>
+<option value="">Select Education</option>
+<option>10th Pass</option>
+<option>12th Pass</option>
+<option>Diploma</option>
+<option>Graduate</option>
+<option>Postgraduate</option>
+</select>
+
+<label>Location</label>
+<input id="location" placeholder="Enter your city" required>
+
+<label>Your Skills</label>
+<input id="skills" placeholder="Typing, Excel, Sales...">
+
+<label>Expected Monthly Salary</label>
+<select id="salary">
+<option>Any Salary</option>
+<option>Below ₹10,000</option>
+<option>₹10,000 - ₹20,000</option>
+<option>₹20,000 - ₹30,000</option>
+<option>Above ₹30,000</option>
+</select>
+
+<label>Work Preference</label>
+<select id="work">
+<option>Any</option>
+<option>Full-time</option>
+<option>Part-time</option>
+<option>Work From Home</option>
+<option>Freelance</option>
+</select>
+
+<button type="submit">Find Opportunities 🚀</button>
+</form>
+
+<div id="result"></div>
+</div>
+
+<div class="box">
+<h2>Our Services</h2>
+<div class="cards">
+
+<div class="card">
+<h3>💼 Job Finder</h3>
+<p>Discover suitable job opportunities.</p>
+</div>
+
+<div class="card">
+<h3>💰 Income Finder</h3>
+<p>Explore ways to earn money.</p>
+</div>
+
+<div class="card">
+<h3>🎓 Skill Finder</h3>
+<p>Discover skills for your career.</p>
+</div>
+
+<div class="card">
+<h3>🏠 Work From Home</h3>
+<p>Explore remote work opportunities.</p>
+</div>
+
+<div class="card">
+<h3>🤖 AI Assistant</h3>
+<p>Get career guidance and suggestions.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Business Ideas</h3>
+<p>Explore small business opportunities.</p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<footer>
+<h2 style="color:#ffc857">AI HUMANITY</h2>
+<p>Building Opportunities. Changing Lives.</p>
+<p>© 2026 AI HUMANITY</p>
+</footer>
+
+<script>
+document.getElementById("jobForm").addEventListener("submit",function(e){
+e.preventDefault();
+
+let location=document.getElementById("location").value;
+let education=document.getElementById("education").value;
+let skills=document.getElementById("skills").value;
+let work=document.getElementById("work").value;
+
+let result=document.getElementById("result");
+result.style.display="block";
+
+result.innerHTML=
+"<h3>Your Search Details</h3>"+
+"<p>Education: "+education+"</p>"+
+"<p>Location: "+location+"</p>"+
+"<p>Skills: "+(skills||"Not specified")+"</p>"+
+"<p>Work Preference: "+work+"</p>"+
+"<b>Your profile is ready for opportunity matching!</b>"+
+"<p>Note: Live verified job listings will be connected in the next development stage.</p>";
+});
+</script>
+
+</body>
+  </html>
