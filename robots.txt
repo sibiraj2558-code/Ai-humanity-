@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sibiraj2558-code.github.io/Ai-humanity-/sitemap.xml
